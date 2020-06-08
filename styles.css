@@ -1,14 +1,32 @@
 body {
     text-align: center;
-    background: #979797;
+    background: #f8f8f8;
 }
 
 h1 {
+    color: #162741;
     font-family: Monoton;
-    font-size: 70px;
-    margin: 0.2em;
+    font-size: 60px;
+    margin: 0.4em;
+    animation: flashing 10s infinite;
 }
-
+@keyframes flashing {
+    0% {
+        color: #cf0d0d;
+    }
+    25% {
+        color: #1a25bc;
+    }
+    50% {
+        color: rgb(194, 132, 50);
+    }
+    75% {
+        color: rgb(141, 238, 15);
+    }
+    100% {
+        color: #c70dc1;
+    }
+}
 h2 {
     margin: 1em 0 0.25em;
 }
@@ -29,11 +47,11 @@ table {
 }
 
 tr {
-    height: 20px;
+    height: 30px;
 }
 
 td {
-    width: 20px;
+    width: 30px;
 }
 
 input[type=number] {
